@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af92cae3-2ea0-46a1-a674-ceb666510668" name="Changes" comment="创建servlet容器">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/BaseHttpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/DispatcherServlet.java" afterDir="false" />
+    <list default="true" id="af92cae3-2ea0-46a1-a674-ceb666510668" name="Changes" comment="创建DispatcherServlet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/sci/AbstractAnnotationConfigDispatcherServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/sci/AbstractDispatcherServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/sci/WebApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/sci/WebServletContainerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/javax.servlet.ServletContainerInitializer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/licretey/web/BaseHttpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/sci/sevlet/BaseHttpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/licretey/web/DispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/sci/sevlet/DispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/licretey/web/context/AbstractRefreshableWebApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/context/AbstractRefreshableWebApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/licretey/web/context/ConfigurableWebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/context/ConfigurableWebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/licretey/web/context/ServletConfigAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/context/ServletConfigAware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/licretey/web/context/WebApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/licretey/web/context/WebApplicationContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,22 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8242da92b12948384c2046018811d1f6&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "8242da92b12948384c2046018811d1f6",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.licretey.web" />
       <recent name="com.licretey.web.context" />
     </key>
   </component>
@@ -66,7 +80,7 @@
       <updated>1698161754642</updated>
       <workItem from="1698161755685" duration="3689000" />
       <workItem from="1698199224290" duration="18000" />
-      <workItem from="1698239262286" duration="900000" />
+      <workItem from="1698239262286" duration="8473000" />
     </task>
     <task id="LOCAL-00001" summary="创建servlet容器">
       <created>1698241433045</created>
@@ -75,14 +89,42 @@
       <option name="project" value="LOCAL" />
       <updated>1698241433045</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="创建DispatcherServlet">
+      <created>1698241776166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698241776166</updated>
+    </task>
+    <task id="LOCAL-00003" summary="创建DispatcherServlet">
+      <created>1698241812698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698241812698</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="创建servlet容器" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建servlet容器" />
+    <MESSAGE value="创建DispatcherServlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建DispatcherServlet" />
   </component>
 </project>

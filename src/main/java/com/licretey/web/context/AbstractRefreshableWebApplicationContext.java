@@ -1,13 +1,10 @@
 package com.licretey.web.context;
 
-import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.support.AbstractRefreshableConfigApplicationContext;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
-import java.io.IOException;
 
 public abstract class AbstractRefreshableWebApplicationContext extends AbstractRefreshableConfigApplicationContext implements ConfigurableWebApplication {
     // protected 让子类可以获取
